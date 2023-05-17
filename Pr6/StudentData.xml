@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Student>
+    <Surname>ytg</Surname>
+    <Name>hytr</Name>
+    <SequenceNumber>21</SequenceNumber>
+    <BirthDate>3.2.2032</BirthDate>
+    <AbmissionDate>3.2.2000</AbmissionDate>
+  </Student>
+</ArrayOfStudent>
