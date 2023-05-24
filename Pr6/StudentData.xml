@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Student>
-    <Surname>ytg</Surname>
-    <Name>hytr</Name>
-    <SequenceNumber>21</SequenceNumber>
-    <BirthDate>3.2.2032</BirthDate>
-    <AbmissionDate>3.2.2000</AbmissionDate>
+    <Surname>TTTTTj</Surname>
+    <Name />
+    <SequenceNumber>1</SequenceNumber>
+    <BirthDate>4.7.2004</BirthDate>
+    <AbmissionDate>2.6.2021</AbmissionDate>
+  </Student>
+  <Student>
+    <Surname>Vita</Surname>
+    <Name>HHHHH</Name>
+    <SequenceNumber>12</SequenceNumber>
+    <BirthDate>4.8.2005</BirthDate>
+    <AbmissionDate>8.4.2021</AbmissionDate>
   </Student>
 </ArrayOfStudent>

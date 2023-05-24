@@ -13,22 +13,40 @@ namespace Pr6
 
         static async Task Main(string[] args)
         {
-            Student.OnSuccesfullParsing += Student_OnSuccesfullParsing;
-
             XmlSerializer serializer = new XmlSerializer(typeof(Student[]));
+            do
+            {
+                Console.WriteLine("""
+                    Chose operation
+                    1 - Rewrite file
+                    2 - Read File
+                    0 - Exit
+                    """);
+                switch (int.Parse(Console.ReadLine()))
+                {
+                    case 1:
+                        Student.OnSuccesfullParsing += Student_OnSuccesfullParsing;
 
-            Student[] students = CreateArrayOfStudents();
+                        Student[] students = CreateArrayOfStudents();
 
-            Array.Sort(students);
+                        Array.Sort(students);
 
-            SerializeAll(serializer, students);
-            WriteDownAll(students);
-            var task = SerializeAllJsonAsync(students, "Json.json");
+                        SerializeAll(serializer, students);
+                        WriteDownAll(students);
+                        var task = SerializeAllJsonAsync(students, "Json.json");
 
-            PrintStudentsFromXML(serializer);
-            PrintStudentsFromTxt();
+                        await task;
+                        break;
+                    case 2:
 
-            await task;
+                        PrintStudentsFromXML(serializer);
+                        PrintStudentsFromTxt();
+
+                        break;
+                    case 0:
+                        return;
+                }
+            } while (true);
         }
 
         private static void Student_OnSuccesfullParsing(object? sender, EventArgs e)
