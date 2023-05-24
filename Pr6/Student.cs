@@ -17,8 +17,8 @@ namespace Pr6
         private int sequenceNumber;
         public int SequenceNumber
         {
-            get { return sequenceNumber;  }
-            set {sequenceNumber = Math.Abs(value); } 
+            get { return sequenceNumber; }
+            set { sequenceNumber = Math.Abs(value); }
         }
 
         public string Surname;
